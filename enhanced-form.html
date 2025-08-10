@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Content & Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+        header, main, footer {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            background: #0074d9;
+            color: white;
+        }
+        h1, h2 {
+            margin-bottom: 10px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background: #f0f0f0;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin: 8px 0 4px;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background: #0074d9;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005fa3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Webpage</h1>
+    <p>Demonstrating HTML5 Content Structuring and Form Building</p>
+</header>
+
+<main>
+    <!-- Lists Section -->
+    <section>
+        <h2>Popular Web Technologies</h2>
+        <ul>
+            <li>HTML5 - Structure and semantics</li>
+            <li>CSS3 - Styling and layout</li>
+            <li>JavaScript - Interactivity</li>
+        </ul>
+
+        <h3>Steps to Build a Webpage</h3>
+        <ol>
+            <li>Plan your structure</li>
+            <li>Write semantic HTML</li>
+            <li>Style with CSS</li>
+            <li>Add interactivity with JavaScript</li>
+        </ol>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+        <h2>HTML5 Input Types</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Input Type</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>text</td>
+                    <td>Single-line text input</td>
+                    <td><input type="text" placeholder="Your name"></td>
+                </tr>
+                <tr>
+                    <td>email</td>
+                    <td>Email address input</td>
+                    <td><input type="email" placeholder="you@example.com"></td>
+                </tr>
+                <tr>
+                    <td>number</td>
+                    <td>Numeric input</td>
+                    <td><input type="number" min="1" max="10"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+    <h2>Media in HTML5</h2>
+    <figure>
+        <img src="https://via.placeholder.com/600x200" alt="Placeholder Banner" style="width:100%; height:auto;">
+        <figcaption>Sample image embedded in HTML5</figcaption>
+    </figure>
+
+    <audio controls>
+        <source src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <video controls width="100%">
+        <source src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+</section>
+
+    <!-- Form Section -->
+    <section>
+        <h2>Contact & Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+            
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+254700000000" pattern="\+254[0-9]{9}" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Choose a username" required minlength="4">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6">
+
+                <label for="confirmpass">Confirm Password:</label>
+                <input type="password" id="confirmpass" name="confirmpass" placeholder="Re-enter password" required minlength="6">
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">--Select Country--</option>
+                    <option value="kenya">Kenya</option>
+                    <option value="uganda">Uganda</option>
+                    <option value="tanzania">Tanzania</option>
+                </select>
+
+                <label>
+                    <input type="checkbox" name="subscribe" value="yes">
+                    Subscribe to newsletter
+                </label>
+
+                <label>Gender:</label>
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female" required> Female</label>
+            </fieldset>
+
+            <button type="submit">Submit Form</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Sandra's HTML5 Project</p>
+</footer>
+
+</body>
+</html>
