@@ -34,7 +34,7 @@
     <!-- Table Section -->
     <section>
         <h2>HTML5 Input Types</h2>
-        <table>
+        <table border="1">
             <thead>
                 <tr>
                     <th>Input Type</th>
@@ -72,12 +72,12 @@
     </figure>
 
     <audio controls>
-        <source src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" type="audio/mpeg">
+        <source src="Maud Elka feat Hiro Songi Songi Clip Officiel.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
-    <video controls width="100%">
-        <source src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" type="video/mp4">
+    <video controls width="300" height="200">
+        <source src="pexel video download.mp4" type="video/mp4">
         Your browser does not support the video element.
     </video>
 </section>
@@ -91,27 +91,40 @@
                 <legend>Personal Information</legend>
                 <label for="fullname">Full Name:</label>
                 <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+                <br />
+                <br />
 
                 <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                <br />
+                <br />
 
                 <label for="phone">Phone Number:</label>
                 <input type="tel" id="phone" name="phone" placeholder="+254700000000" pattern="\+254[0-9]{9}" required>
+                <br />
+                <br />
 
                 <label for="dob">Date of Birth:</label>
                 <input type="date" id="dob" name="dob" required>
+                <br />
             </fieldset>
 
             <fieldset>
                 <legend>Account Details</legend>
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" placeholder="Choose a username" required minlength="4">
+                <br />
+                <br />
 
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6">
+                <br />
+                <br />
 
                 <label for="confirmpass">Confirm Password:</label>
                 <input type="password" id="confirmpass" name="confirmpass" placeholder="Re-enter password" required minlength="6">
+                <br />
+                <br />
             </fieldset>
 
             <fieldset>
@@ -123,16 +136,24 @@
                     <option value="uganda">Uganda</option>
                     <option value="tanzania">Tanzania</option>
                 </select>
+                <br />
+                <br />
 
                 <label>
                     <input type="checkbox" name="subscribe" value="yes">
                     Subscribe to newsletter
                 </label>
+                <br />
+                <br />
 
                 <label>Gender:</label>
                 <label><input type="radio" name="gender" value="male" required> Male</label>
                 <label><input type="radio" name="gender" value="female" required> Female</label>
+                <br />
+                <br />
             </fieldset>
+            <br />
+            <br />
 
             <button type="submit">Submit Form</button>
         </form>
